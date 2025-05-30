@@ -49,13 +49,13 @@ sudo mkdir -p /mnt/k
 
 ---
 
-### 4. Manually Mount the Network Drive
+### 4. Manually Mount the Network Drive (run this command from the subdirectory)
 
 Use the `drvfs` file system type to mount your Windows drive into WSL.  
 Here’s how to mount the Windows `F:` drive into `/mnt/k`:
 
 ```bash
-sudo mount -t drvfs F: /mnt/k
+sudo mount -t drvfs K: /mnt/k
 ```
 
 Now your network drive is accessible inside WSL at:
