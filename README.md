@@ -8,7 +8,7 @@ This is a simple guide for setting up **Bash on Windows** using **WSL (Windows S
 
 - Windows 10 or 11 with WSL support  
 - Admin privileges on your machine  
-- A network drive mapped in Windows (e.g. `F:`)  
+- A network drive mapped in Windows (e.g. `K:`)  
 
 ---
 
@@ -52,7 +52,7 @@ sudo mkdir -p /mnt/k
 ### 4. Manually Mount the Network Drive (run this command from the subdirectory)
 
 Use the `drvfs` file system type to mount your Windows drive into WSL.  
-Here’s how to mount the Windows `F:` drive into `/mnt/k`:
+Here’s how to mount the Windows `K:` drive into `/mnt/k`:
 
 ```bash
 sudo mount -t drvfs K: /mnt/k
@@ -68,7 +68,7 @@ Now your network drive is accessible inside WSL at:
 
 ## Notes
 
-- You can replace `F:` with any other Windows drive letter.
+- You can replace `K:` with any other Windows drive letter.
 - If you encounter permission issues, ensure the drive is already mounted and accessible in Windows.
 - For drives that disconnect often, you can script this and auto-run it in your WSL profile.
 
